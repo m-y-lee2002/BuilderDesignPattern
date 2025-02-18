@@ -5,18 +5,21 @@ public class CrocsBuilder implements ShoeBuilder{
     }
 
     @Override
-    public void buildShoeColor(){
+    public ShoeBuilder buildShoeColor(){
         this.shoe.setShoeColor('B');
+        return this;
     }
 
     @Override
-    public void buildShoeLaces(){
+    public ShoeBuilder buildShoeLaces(){
         this.shoe.setShoeLaces(false);
+        return this;
     }
 
     @Override
-    public void buildShoeMaterial(){
+    public ShoeBuilder buildShoeMaterial(){
         this.shoe.setShoeMaterial("Foam");
+        return this;
     }
 
     @Override

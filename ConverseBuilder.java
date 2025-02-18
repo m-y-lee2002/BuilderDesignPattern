@@ -5,18 +5,21 @@ public class ConverseBuilder implements ShoeBuilder{
     }
 
     @Override
-    public void buildShoeColor(){
+    public ShoeBuilder buildShoeColor(){
         this.shoe.setShoeColor('R');
+        return this;
     }
 
     @Override
-    public void buildShoeLaces(){
+    public ShoeBuilder buildShoeLaces(){
         this.shoe.setShoeLaces(true);
+        return this;
     }
 
     @Override
-    public void buildShoeMaterial(){
+    public ShoeBuilder buildShoeMaterial(){
         this.shoe.setShoeMaterial("Canvas");
+        return this;
     }
 
     @Override

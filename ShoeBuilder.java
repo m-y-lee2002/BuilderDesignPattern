@@ -1,6 +1,6 @@
 interface ShoeBuilder{
-    void buildShoeColor();
-    void buildShoeLaces();
-    void buildShoeMaterial();
+    ShoeBuilder buildShoeColor();
+    ShoeBuilder buildShoeLaces();
+    ShoeBuilder buildShoeMaterial();
     Shoes getShoes();
 }
